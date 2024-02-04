@@ -348,7 +348,7 @@ pre {
     scrollbar-color: var(--md-default-fg-color--lighter) transparent;
     scrollbar-width: thin;
     touch-action: auto;
-    border-radius: 8px;
+    border-radius: 5px;
     word-break: normal
 }
 
@@ -687,7 +687,7 @@ pre {
 .md-typeset table:not([class]) {
     background-color: var(--md-default-bg-color);
     border: .05rem solid var(--md-typeset-table-color);
-    border-radius: 8px;
+    border-radius: 5px;
     display: inline-block;
     font-size: .64rem;
     max-width: 100%;
@@ -2464,7 +2464,7 @@ body[data-md-color-scheme="slate"]  .md-nav__item .md-nav__link--active::after {
 @media screen and (min-width:60em) {
     .md-search__form {
         background-color: rgba(0, 0, 0, .26);
-        border-radius: .1rem;
+        border-radius: 5px;
         height: 1.8rem
     }
 
