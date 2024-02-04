@@ -880,7 +880,7 @@
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h2 id="params">Params</h2>
-<ol>
+<ul>
 <li>
 <p><strong>text_model</strong>: (str) This is the name of the pre-trained Language model used to generate text embeddings. Currently, we only use sentence embeddings (pooled output of model) and not individual word embeddings, as per word/token embeddings are computationally very expensive. The default model is "small_bert/bert_en_uncased_L-2_H-128_A-2". (NOTE: Names of different models can be copied/taken from text_pretrained.py).</p>
 </li>
@@ -893,9 +893,9 @@
 <li>
 <p><strong>fine_tune_text_model</strong>: (bool) If set to True, the text model "trainable" parameter is set to True, and the text model weights are updated with training. Otherwise, the weights of the model are frozen, and only used to generate embeddings. It is recommended to be set to False, unless the data volume is huge.</p>
 </li>
-</ol>
+</ul>
 <h2 id="other-general-parameters">Other General Parameters</h2>
-<ol>
+<ul>
 <li>
 <p><strong>optimizer</strong>: (str) The optimization algorithm to use. Example: "Adam".</p>
 </li>
@@ -914,7 +914,7 @@
 <li>
 <p><strong>hidden_lyrs</strong>: (int) The number of hidden layers in the model. Example: 1.</p>
 </li>
-</ol>
+</ul>
 
               
             </article>

@@ -892,10 +892,10 @@
 <p>The payload is a JSON object with the following structure:</p>
 <h3 id="1-input-features-x">1. Input Features (<code>x</code>)</h3>
 <p>This is a dictionary where each key is a feature name (must be same as in CSV file) and the value is another dictionary containing the following key/value pairs:</p>
-<ol>
+<ul>
 <li><strong>type</strong>: (string) Value must be one of "NUMBER", "CATEGORY", "STRING", "IMAGE".</li>
 <li><strong>null</strong>: (string) Optional for numerical features (NUMBER). Currently only supports "mean", i.e. replace null/missing values with mean of feature.</li>
-</ol>
+</ul>
 <h3 id="2-outputpredicted-features-y">2. Output/Predicted Features (<code>y</code>)</h3>
 <p>This is a dictionary where each key is a feature name (must be same as in CSV file) and the value is another dictionary containing the following key/value pairs:</p>
 <ul>
@@ -909,7 +909,7 @@
 </code></pre></div>
 <h2 id="meta-data">META DATA</h2>
 <p>The following parameters are also needed.</p>
-<ol>
+<ul>
 <li><strong>mid</strong>: (string) Model ID, must be unique for every model.</li>
 <li><strong>url</strong>: (string) URL for some logging endpoint.</li>
 <li><strong>img_data_from_S3</strong>: (bool) Whether to download image data from S3 or directly from some url. Currently only supports from S3, so fix it to True.</li>
@@ -917,7 +917,7 @@
 <li><strong>normalize_numerical_cols</strong>: (bool) Whether to normalize numerical columns or not. Recommended to be True, to improve training accuracy.</li>
 <li><strong>csv_file_paths</strong>: (list of strings) Each element in list must be path to CSV file in S3 bucket which shall be downloaded. e.g. ["dev/pet-dataset-files/csv-data/pet_data.csv"],</li>
 <li><strong>img_file_paths</strong>: (list of strings) Each element in list must be path to ZIP file in S3 bucket which shall be downloaded and then extracted to some root folder. e.g. ["dev/pet-dataset-files/img-data/pet_train_images.zip"], (NOTE: It is the responsibility of user to ensure that images in ZIP file have same name as given in CSV file)</li>
-</ol>
+</ul>
 <p>See examples section to see how to put it all together.</p>
 
               

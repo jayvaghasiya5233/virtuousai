@@ -878,7 +878,7 @@
 <h1 id="pipelines">Pipelines</h1>
 <h2 id="1-create-pipeline-w-data">1: Create Pipeline w/ Data</h2>
 <p>To create a pipeline, you have two options (se our API <a href="python-guide.html">API</a> or <a href="https://cloud.virtuousai.com">user interface (UX)</a> to create a pipeline.)</p>
-<p><br></p>
+<p><span class="space-block"></span></p>
 <h2 id="2-run-automl-via-hyperparameter-optimization">2:  Run AUTOML (via Hyperparameter Optimization)</h2>
 <p>Next, we must create objects for the end users to interact with. </p>
 <pre class="content-block"><div class="copy-button" onclick="copyContentToClipboard(this)">
@@ -887,7 +887,7 @@
   </div><code class="hljs vbnet"><span id="text">curl -X POST -H "Content-Type: application/json" -d '{"data": {"model": img...}, "meta_data":{}}' http://localhost:5000/v1/fit</span>
 </code></pre>
 
-<p><br></p>
+<p><span class="space-block"></span></p>
 <h2 id="3-predict">3: Predict</h2>
 <p>After some time for training, say 15 minutes, you can add widgets to those models.</p>
 <pre class="content-block"><div class="copy-button" onclick="copyContentToClipboard(this)">
@@ -896,7 +896,7 @@
   </div><code class="hljs vbnet"><span id="text">curl -X POST -H "Content-Type: application/json" -d '{"data": {"model": img...}, "meta_data":{}}' http://localhost:5000/v1/predict</span>
 </code></pre>
 
-<p><br></p>
+<p><span class="space-block"></span></p>
 <h2 id="4-explain">4:  Explain</h2>
 <p>Lastly, we can create events to track events such as data drift. (This may indicate that there is a problem that needs to be addressed). </p>
 <pre class="content-block"><div class="copy-button" onclick="copyContentToClipboard(this)">
@@ -906,7 +906,7 @@
 </code></pre>
 
 <p>This will be triggered based on whatever your metrics you defined.</p>
-<p><br></p>
+<p><span class="space-block"></span></p>
 <script src="./script.js"></script>
 
               

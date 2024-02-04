@@ -228,7 +228,7 @@ pre {
 .md-typeset h2 {
     font-size: 1.5625em;
     line-height: 1.4;
-    margin: 0.5em 0 .5em;
+    margin: 0.5em 0 0em;
     font-weight: 500;
 }
 
@@ -2475,7 +2475,7 @@ body[data-md-color-scheme="slate"]  .md-nav__item .md-nav__link--active::after {
 
 [data-md-toggle=search]:checked~.md-header .md-search__form {
     background-color: var(--md-default-bg-color);
-    border-radius: .1rem .1rem 0 0;
+    border-radius: 5px 5px 0 0;
     box-shadow: 0 0 .6rem rgba(0, 0, 0, .07);
     color: var(--md-default-fg-color)
 }
@@ -2753,11 +2753,11 @@ body[data-md-color-scheme="slate"]  .md-nav__item .md-nav__link--active::after {
 
 [dir=ltr] .md-search__output,
 [dir=rtl] .md-search__output {
-    border-bottom-right-radius: .1rem
+    border-bottom-right-radius: 5px
 }
 
 [dir=rtl] .md-search__output {
-    border-bottom-left-radius: .1rem
+    border-bottom-left-radius: 5px
 }
 
 .md-search__output {
@@ -6694,5 +6694,9 @@ body[data-md-color-scheme="slate"] .md-typeset h1 {
 }
 body[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
     background-color: #0c2a41;
+}
+.space-block {
+    display: block;
+    height: 10px;
 }
 /* css */

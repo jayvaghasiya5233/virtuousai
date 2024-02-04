@@ -796,7 +796,7 @@
 <p>It is not yet capable of enabling chatbot or other generative AI tasks.</p>
 <h2 id="1-building-apps">1. Building Apps</h2>
 <p>To get started with VAI-UTILS, with a use a user key and a pipeline with data, follow these steps:</p>
-<ol>
+<ul>
 <li>
 <p>Install VAI Toolkit by running the following command:</p>
 <p><pre class="content-block"><div class="copy-button">
@@ -809,14 +809,14 @@
 </div><code class="hljs vbnet"><span id="text">curl -X POST -H "Content-Type: application/json" -d '{"data": {"model": img...}, "meta_data":{}}' http://localhost:5000/endpoint
 </span></code></pre><br></p>
 </li>
-</ol>
+</ul>
 <h2 id="2-servingdeploying-apps">2. Serving/Deploying Apps</h2>
 <p>After testing locally, deploying is done automatically using gitlab CI-CD with the correct configurations. With "pages" in the deploy section of the gitlab-ci.yaml documentation will automatically be pushed to the repo. </p>
 <p>Make sure to check with Erik and Alex for your first push.</p>
-<p><br></p>
+ 
 <h2 id="3-testing-endpoints">3. Testing Endpoints</h2>
 <p>These following are the most common commands, used for testing payloads via python. The various functions are presented with various ways of calling.</p>
-<ol>
+<ul>
 <li>
 <p>Curl endpoint (Hyperopt Function) <pre class="content-block"><div class="copy-button">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#c9c9c9" d="M15 1H4c-1.1 0-2 .9-2 2v13c0 .55.45 1 1 1s1-.45 1-1V4c0-.55.45-1 1-1h10c.55 0 1-.45 1-1s-.45-1-1-1zm.59 4.59l4.83 4.83c.37.37.58.88.58 1.41V21c0 1.1-.9 2-2 2H7.99C6.89 23 6 22.1 6 21l.01-14c0-1.1.89-2 1.99-2h6.17c.53 0 1.04.21 1.42.59zM15 12h4.5L14 6.5V11c0 .55.45 1 1 1z"/></svg>
@@ -836,11 +836,11 @@
     <div class="copy-text"></div>
   </div><code class="hljs vbnet"><span id="text">response = response(data="{}, headers)</span></code></pre></code></p>
 </li>
-</ol>
+</ul>
 <p>Although these may be convenient, it will always be better to call the RESTAPI equivalent to ensure repeatability in production environment.</p>
 <div class="highlight"><pre><span></span><code>curl -X POST -H <span class="s2">&quot;Content-Type: application/json&quot;</span> -d <span class="s1">&#39;{&quot;data&quot;: {&quot;model&quot;: img...}, &quot;meta_data&quot;:{}}&#39;</span> http://localhost:5000/endpoint
 </code></pre></div>
-<p><br></p>
+ <p><span class="space-block"></span></p>
 <script src="./script.js"></script>
 
               
