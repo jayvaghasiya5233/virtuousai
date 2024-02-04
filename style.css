@@ -37,6 +37,7 @@ p em {
 
 p {
     margin-bottom: 8px;
+    margin-top: 8px;
     text-align: justify;
     font-family: "Poppins", sans-serif;
 }
@@ -241,6 +242,7 @@ img .no-lightbox {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    display: none;
 }
 .content-block .copy-text{
     display: none;
