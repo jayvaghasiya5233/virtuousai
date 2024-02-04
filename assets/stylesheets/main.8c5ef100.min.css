@@ -6699,4 +6699,7 @@ body[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
     display: block;
     height: 10px;
 }
+.md-typeset h2 + p {
+    margin-top: 0;
+}
 /* css */
